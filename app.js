@@ -7,13 +7,15 @@ const dotenv = require('dotenv');
 dotenv.config({path : './config/config.env'});
 
 
+//Importing all routes
+const jobs = require('./routes/jobs');
 
+app.use('/api/v1',jobs);
 
 const PORT = process.env.PORT
 app.listen(PORT,()=>{
-    console.log(`Server started at ${PORT}`);
+    console.log(`Server started at ${PORT} in ${process.env.NODE_ENV} MODE.`);
 });
 
 
-//some updates
 
