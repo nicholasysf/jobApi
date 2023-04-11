@@ -7,6 +7,13 @@ const dotenv = require('dotenv');
 dotenv.config({path : './config/config.env'});
 
 
+//Connecting to database
+
+//Creating middleware 
+
+
+
+
 //Importing all routes
 const jobs = require('./routes/jobs');
 
